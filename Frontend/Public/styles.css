@@ -35,7 +35,7 @@ body {
 
 .navbar ul li {
   display: inline-block;
-  position: relative; /* Position relative for dropdown alignment */
+  position: relative;
 }
 
 .navbar ul li a {
@@ -47,20 +47,21 @@ body {
 
 /* Dropdown Menu */
 .navbar ul li .dropdown-content {
-  display: none; /* Hide the dropdown by default */
+  display: none; /* Initially hidden */
   position: absolute;
-  background-color: #f9f9f9;
+  background-color: #f9f9f9; /* Light grey for visibility */
   min-width: 160px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
 }
 
-.navbar ul li:hover .dropdown-content {
-  display: block; /* Show the dropdown on hover */
+.navbar ul li:hover .dropdown-content,
+.navbar ul li .dropdown-content:hover { /* Ensure dropdown stays visible when hovering over any part of it */
+  display: block;
 }
 
 .dropdown-content a {
-  color: black; /* Ensure text is visible against light background */
+  color: black; /* High contrast text */
   padding: 12px 16px;
   text-decoration: none;
   display: block;
@@ -68,33 +69,33 @@ body {
 }
 
 .dropdown-content a:hover {
-  background-color: #4CAF50; /* Match hover color with navbar */
-  color: #ffffff; /* White text for contrast */
+  background-color: #4CAF50; /* Green background on hover */
+  color: #ffffff; /* White text for visibility */
 }
 
 /* Social Media Icons */
 .social-media-icons a {
-  color: #ffffff; /* White icons for better visibility */
+  color: #ffffff;
   padding: 0 10px;
-  font-size: 2rem; /* Larger size for visibility */
+  font-size: 2rem;
 }
 
 .social-media-icons a:hover {
-  color: #cccccc; /* Light grey for subtle hover effect */
+  color: #cccccc;
 }
 
 /* Banner */
 .banner {
   background-image: url('banner-image.jpg');
   background-size: cover;
-  color: #000000; /* Dark text for readability */
+  color: #000000;
   text-align: center;
   padding: 100px 0;
 }
 
 /* Footer */
 .footer {
-  background-color: #263238; /* Dark grey footer for contrast */
+  background-color: #263238;
   color: #ffffff;
   padding: 20px 0;
   text-align: center;
@@ -112,13 +113,13 @@ body {
 }
 
 .footer-links a {
-  color: #ffeb3b; /* Yellow links for visibility */
+  color: #ffeb3b;
   text-decoration: none;
 }
 
 .footer-address p {
   margin: 5px 0;
-  color: #B0BEC5; /* Light grey text for details */
+  color: #B0BEC5;
 }
 
 .social-icon {
