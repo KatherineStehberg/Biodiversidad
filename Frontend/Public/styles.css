@@ -2,8 +2,8 @@ body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
-  background-color: #f6f6f6; /* Light grey background */
-  color: #333333; /* Dark grey text */
+  background-color: #f6f6f6;
+  color: #333333;
 }
 
 .container {
@@ -14,12 +14,11 @@ body {
 
 /* Navbar */
 .navbar {
-  background-color: #4CAF50; /* Green background */
+  background-color: #4CAF50;
   padding: 10px 0;
   color: #ffffff;
   display: flex;
   justify-content: space-between;
-  border-bottom: 3px solid #333333; /* Dark grey border for emphasis */
 }
 
 .navbar .logo a {
@@ -31,75 +30,62 @@ body {
 .navbar ul {
   list-style-type: none;
   text-align: right;
+  position: relative;
+}
+
+.navbar ul li {
+  display: inline-block;
 }
 
 .navbar ul li a {
   color: #ffffff;
   text-decoration: none;
-  padding: 0 10px;
+  padding: 10px 15px;
+  display: block;
 }
 
-/* Social Media Icons */
-.social-media-icons a {
-  color: #ffffff;
-  padding: 0 5px;
-  font-size: 1.5rem;
+.navbar ul li a:hover,
+.navbar ul li:hover .dropdown-content {
+  background-color: #333333;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #f1f1f1;
+}
+
+.navbar .dropdown:hover .dropdown-content {
+  display: block;
 }
 
 /* Banner */
 .banner {
-  background-image: url('banner-image.jpg'); /* Add your image URL here */
+  background-image: url('banner-image.jpg');
   background-size: cover;
-  color: #ffffff;
+  color: #000000; /* Changed text color to black for better visibility */
   text-align: center;
   padding: 100px 0;
 }
 
-/* Cards Section */
-.cards-section .cards-container {
-  display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
-  gap: 20px;
-}
-
-.card {
-  background-color: #ffffff;
-  border: 1px solid #dddddd; /* Light grey border */
-  padding: 20px;
-  border-radius: 5px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow for depth */
-  width: 22%;
-}
-
-.card a {
-  background-color: #D32F2F; /* Red for buttons */
-  color: #ffffff;
-}
-
-.card a:hover {
-  background-color: #B71C1C; /* Darker red on hover */
-}
-
-/* Blog Posts Section */
-.blog-posts-section .blog-posts-container {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-}
-
-.blog-post {
-  background-color: #ffffff;
-  border: 1px solid #B0BEC5; /* Light grey border */
-  padding: 20px;
-  width: 48%; /* Two posts per row */
-  margin-bottom: 20px;
-  border-radius: 5px;
-}
-
 /* Footer */
 .footer {
-  background-color: #263238; /* Dark grey background */
+  background-color: #263238;
   color: #ffffff;
   padding: 20px 0;
   text-align: center;
@@ -117,13 +103,13 @@ body {
 }
 
 .footer-links a {
-  color: #ffeb3b; /* Yellow for links */
+  color: #ffeb3b;
   text-decoration: none;
 }
 
 .footer-address p {
   margin: 5px 0;
-  color: #B0BEC5; /* Light grey text for less emphasis */
+  color: #B0BEC5;
 }
 
 .social-icon {
