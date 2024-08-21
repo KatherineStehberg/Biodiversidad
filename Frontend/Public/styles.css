@@ -44,9 +44,9 @@ body {
   display: block;
 }
 
-.navbar ul li a:hover,
-.navbar ul li:hover .dropdown-content {
-  background-color: #333333;
+/* Dropdown Menu */
+.navbar .dropdown:hover .dropdown-content {
+  display: block;
 }
 
 .dropdown-content {
@@ -70,15 +70,29 @@ body {
   background-color: #f1f1f1;
 }
 
-.navbar .dropdown:hover .dropdown-content {
-  display: block;
+/* Hover effect for navbar links */
+.navbar ul li a:hover,
+.navbar ul li .dropdown-content a:hover {
+  background-color: #333333;
+  color: #ffffff;
+}
+
+/* Social Media Icons */
+.social-media-icons a {
+  color: #ffffff; /* Icons in white for better visibility */
+  padding: 0 10px;
+  font-size: 2rem; /* Increased size for better visibility */
+}
+
+.social-media-icons a:hover {
+  color: #cccccc; /* Light grey on hover for a subtle effect */
 }
 
 /* Banner */
 .banner {
   background-image: url('banner-image.jpg');
   background-size: cover;
-  color: #000000; /* Changed text color to black for better visibility */
+  color: #000000;
   text-align: center;
   padding: 100px 0;
 }
