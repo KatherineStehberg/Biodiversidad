@@ -125,3 +125,43 @@ body {
 .footer-address .email-link {
   color: #ffeb3b; /* Amarillo para el email */
 }
+
+/* Navbar General Style */
+.navbar {
+  background-color: #4CAF50; /* Verde para la barra de navegación */
+  padding: 10px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar .container {
+  width: 100%; /* Asegura que el contenedor ocupe todo el ancho */
+}
+
+.navbar .logo a, .navbar ul.nav-links a {
+  color: #ffffff; /* Texto blanco para todos los enlaces */
+  text-decoration: none;
+}
+
+.navbar ul {
+  list-style-type: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  align-items: center; /* Centra los elementos verticalmente */
+}
+
+.navbar ul li {
+  padding: 0 15px; /* Espaciado horizontal entre elementos de la lista */
+}
+
+.navbar ul li a {
+  padding: 10px 15px; /* Espaciado alrededor de los enlaces para un mejor área de clic */
+}
+
+/* Efectos adicionales para hover */
+.navbar ul li a:hover {
+  background-color: #367c39; /* Un tono más oscuro de verde para hover */
+  border-radius: 5px; /* Bordes redondeados para el efecto de hover */
+}
