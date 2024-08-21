@@ -1,84 +1,127 @@
-/* Estilos para la sección de Servicios */
+/* Estilos Generales */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f6f6f6;
+  color: #333333;
+}
 
+.container {
+  width: 80%;
+  margin: auto;
+  padding: 20px 0;
+}
+
+/* Navbar */
+.navbar {
+  background-color: #4CAF50;
+  color: #ffffff;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0;
+}
+
+.navbar .logo a {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+.navbar ul {
+  list-style-type: none;
+  text-align: right;
+  position: relative;
+}
+
+.navbar ul li {
+  display: inline-block;
+}
+
+.navbar ul li a {
+  color: #ffffff;
+  text-decoration: none;
+  padding: 10px 15px;
+  display: block;
+}
+
+/* Estilos específicos para la sección de Servicios */
 .categories {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    gap: 20px;
-  }
-  
-  .category {
-    flex: 1 1 300px;
-    background-color: #009688;
-    color: #ffffff;
-    padding: 20px;
-    border-radius: 5px;
-    text-align: center;
-    transition: transform 0.3s ease;
-  }
-  
-  .category:hover {
-    transform: translateY(-5px);
-  }
-  
-  .category h3 {
-    font-size: 1.5rem;
-    margin-bottom: 10px;
-  }
-  
-  .category p {
-    font-size: 1rem;
-    line-height: 1.4;
-  }
-  
-  .category a {
-    display: inline-block;
-    margin-top: 10px;
-    padding: 8px 16px;
-    background-color: #ffffff;
-    color: #009688;
-    text-decoration: none;
-    border-radius: 5px;
-    transition: background-color 0.3s ease, color 0.3s ease;
-  }
-  
-  .category a:hover {
-    background-color: #009688;
-    color: #ffffff;
-  }
-  
-  /* Tarjetas (Cards) */
-  .card {
-    background-color: #ffffff;
-    border: 1px solid #dddddd;
-    padding: 20px;
-    margin-bottom: 20px;
-    border-radius: 5px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  }
-  
-  .card h3 {
-    font-size: 1.5rem;
-    margin-bottom: 10px;
-  }
-  
-  .card p {
-    font-size: 1rem;
-    line-height: 1.4;
-    margin-bottom: 20px;
-  }
-  
-  .card a {
-    display: inline-block;
-    padding: 8px 16px;
-    background-color: #009688;
-    color: #ffffff;
-    text-decoration: none;
-    border-radius: 5px;
-    transition: background-color 0.3s ease, color 0.3s ease;
-  }
-  
-  .card a:hover {
-    background-color: #00796b;
-  }
-  
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.category {
+  flex: 1 1 300px;
+  background-color: #009688; /* Color verde-azulado para el fondo */
+  color: #ffffff; /* Texto blanco para contraste */
+  padding: 20px;
+  border-radius: 5px;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.category:hover {
+  transform: translateY(-5px); /* Efecto de elevación al hacer hover */
+}
+
+.category h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.category p {
+  font-size: 1rem;
+  line-height: 1.4;
+}
+
+.category a {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 8px 16px;
+  background-color: #ffffff; /* Fondo blanco para los botones */
+  color: #009688; /* Texto en color verde-azulado */
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.category a:hover {
+  background-color: #00796b; /* Verde oscuro para hover */
+  color: #ffffff; /* Texto blanco para contraste */
+}
+
+/* Footer */
+.footer {
+  background-color: #263238;
+  color: #ffffff;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.footer-links {
+  list-style-type: none;
+  text-align: center;
+  padding: 0;
+}
+
+.footer-links li {
+  display: inline;
+  margin: 0 10px;
+}
+
+.footer-links a {
+  color: #ffeb3b; /* Amarillo para los enlaces */
+  text-decoration: none;
+}
+
+.footer-address p {
+  margin: 5px 0;
+  color: #B0BEC5; /* Gris claro para detalles adicionales */
+}
+
+.footer-address .email-link {
+  color: #ffeb3b; /* Amarillo para el email */
+}
