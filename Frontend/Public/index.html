@@ -14,23 +14,35 @@
       <a href="https://www.facebook.com"><i class="bi bi-facebook"></i></a>
       <a href="https://www.instagram.com"><i class="bi bi-instagram"></i></a>
     </div>
-    <div class="logo">
-      <a href="/">Biodiversidad.cl</a>
-    </div>
-    <ul class="nav-links">
-      <li><a href="./Projects.html">Proyectos</a> |</li>
-      <li><a href="./blog.html">Blog</a> |</li>
-      <li><a href="./Contact.html">Contacto</a></li>
-      <li><a href="./Login.html" class="login-button">Inicio Sesión</a></li>
-    </ul>
-  </nav>
-
-  <!-- Secondary Navbar -->
-  <nav class="secondary-navbar">
     <div class="container">
-      <ul>
-        <li><a href="./Services.html">Servicios</a></li>
-        <li><a href="./About.html">Sobre Nosotros</a></li>
+      <div class="logo"><a href="/">Biodiversidad.cl</a></div>
+      <ul class="nav-links">
+        <li class="dropdown"><a href="#">Servicios</a>
+          <div class="dropdown-content">
+            <a href="./Services.html">Nuestros Servicios</a>
+            <a href="#">Consultoría</a>
+            <a href="#">Auditorías</a>
+          </div>
+        </li>
+        <li class="dropdown"><a href="#">Expertos</a>
+          <div class="dropdown-content">
+            <a href="./Experts.html">Lista de Expertos</a>
+            <a href="#">Unirse como Experto</a>
+          </div>
+        </li>
+        <li class="dropdown"><a href="#">Proyectos</a>
+          <div class="dropdown-content">
+            <a href="./Projects.html">Proyectos Actuales</a>
+            <a href="#">Publicar Proyecto</a>
+          </div>
+        </li>
+        <li class="dropdown"><a href="#">Blog</a>
+          <div class="dropdown-content">
+            <a href="./blog.html">Últimos Artículos</a>
+            <a href="#">Categorías</a>
+          </div>
+        </li>
+        <li><a href="./Contact.html">Contacto</a></li>
       </ul>
     </div>
   </nav>
@@ -43,8 +55,36 @@
     </div>
   </div>
 
-  <!-- Content Sections and Footer -->
-  <!-- Add your sections and footer as needed -->
+  <!-- Cards Section -->
+  <section class="cards-section">
+    <div class="container">
+      <h2 class="section-title">Explora Nuestros Servicios</h2>
+      <div class="cards-container">
+        <!-- Example Card -->
+        <div class="card">
+          <h3>Servicio de Consultoría</h3>
+          <p>Asesoría especializada en gestión ambiental y desarrollo sostenible.</p>
+          <a href="#" class="btn">Más Información</a>
+        </div>
+        <!-- Repeat for other cards -->
+      </div>
+    </div>
+  </section>
 
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <ul class="footer-links">
+        <li><a href="#terms">Términos y Condiciones</a></li>
+        <li><a href="#privacy">Política de Privacidad</a></li>
+        <li><a href="#sponsor">¿Quieres ser Patrocinador?</a></li>
+      </ul>
+      <div class="footer-address">
+        <p>Dirección: Avenida Egaña 1638, B. Peñalolén. Santiago. Chile.</p>
+        <p>Contacto: <a href="mailto:info@biodiversidad.cl">info@biodiversidad.cl</a></p>
+        <p>Todos los Derechos Reservados 2024</p>
+      </div>
+    </div>
+  </footer>
 </body>
 </html>
