@@ -89,3 +89,26 @@ CREATE INDEX idx_articulos_autor_id ON articulos(autor_id);
 CREATE INDEX idx_articulos_categoria_id ON articulos(categoria_id);
 CREATE INDEX idx_comentarios_articulo_id ON comentarios(articulo_id);
 CREATE INDEX idx_comentarios_usuario_id ON comentarios(usuario_id);
+
+CREATE TABLE autenticacion (
+    id UUID PRIMARY KEY DEFAULT gen_random_uuid(),
+    usuario_id UUID REFERENCES usuarios(id),
+    token VARCHAR(255) NOT NULL,
+    fecha_creacion TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    fecha_expiracion TIMESTAMP,
+    estado VARCHAR(50) CHECK (estado IN ('activo', 'expirado')) NOT NULL
+);
+
+CREATE TABLE roles (
+    id UUID PRIMARY KEY DEFAULT gen_random_uuid(),
+    nombre VARCHAR(50) UNIQUE NOT NULL,
+    descripcion TEXT
+);
+
+ALTER TABLE usuarios
+ADD COLUMN verificado BOOLEAN DEFAULT FALSE,
+ADD COLUMN ultimo_login TIMESTAMP;
+
+ALTER TABLE usuarios
+ADD COLUMN rol_id UUID REFERENCES roles(id);
+
