@@ -42,34 +42,27 @@ header {
   color: white; /* Texto blanco para contraste */
 }
 
-.cards-section, .slider-section {
-  padding: 20px;
-  background-color: #fff; /* Fondo blanco para secciones de contenido */
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Sombra sutil */
-}
-
-.card {
-  background: #f9f9f9; /* Fondo más claro para las tarjetas */
-  border: 1px solid #ddd; /* Borde sutil para las tarjetas */
-  padding: 20px;
-  margin: 10px;
-  text-align: center;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Sombra más suave para las tarjetas */
-}
-
-.card img {
-  width: 100%;
-  height: auto;
-  border-radius: 5px; /* Bordes redondeados para las imágenes */
-}
-
-.btn {
-  background-color: #00796b; /* Botón con un verde más oscuro */
+.banner-btn {
+  background-color: #00796b; /* Un verde más oscuro para botones */
   color: white;
-  text-decoration: none;
   padding: 10px 20px;
   border-radius: 5px;
+  text-decoration: none;
   display: inline-block;
+  margin-top: 20px;
+}
+
+.register-link {
+  background-color: #ffeb3b; /* Un color amarillo para destacar */
+  color: #333; /* Texto oscuro para contraste */
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.register-link:hover {
+  background-color: #e0c91f; /* Un amarillo más oscuro al pasar el mouse */
 }
 
 footer {
