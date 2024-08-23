@@ -190,12 +190,12 @@ header {
   display: flex;
   justify-content: space-between;
   transform: translateY(-50%);
-  z-index: 10; /* Ensure arrows are visible above other elements */
+  z-index: 10; /* Asegura que las flechas estén encima de todo */
 }
 
 .slider-navigation a {
   background-color: rgba(0, 0, 0, 0.5);
-  padding: 0.5rem;
+  padding: 0.8rem;
   border-radius: 50%;
   cursor: pointer;
   display: flex;
@@ -203,17 +203,20 @@ header {
   justify-content: center;
 }
 
-.slider-navigation img,
 .slider-navigation i {
-  width: 24px;
-  height: 24px;
+  font-size: 24px;
   color: #fff;
-  vertical-align: middle;
+  transition: color 0.3s ease;
 }
 
 .slider-navigation a:hover {
   background-color: rgba(0, 0, 0, 0.7);
 }
+
+.slider-navigation a:hover i {
+  color: #ff9933; /* Cambia el color del icono al hacer hover */
+}
+
 
 /* Media Queries for Responsive Design */
 @media (max-width: 768px) {
