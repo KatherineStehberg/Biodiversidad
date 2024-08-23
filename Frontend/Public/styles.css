@@ -1,78 +1,144 @@
-body, html {
+/* Global Styles */
+body {
+  font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
-  font-family: Arial, sans-serif;
-  background-color: #f6f6f6; /* Color de fondo general */
+  background-color: #f5f5f5;
+  color: #333;
+}
+
+a {
+  text-decoration: none;
+  color: #333;
 }
 
 header {
-  background-color: #4CAF50; /* Verde para el header */
-  color: white;
-  padding: 10px 0;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.top-bar {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5rem 2rem;
+  background-color: #f8f8f8;
+  font-size: 0.9rem;
+}
+
+.top-info a {
+  margin-right: 1.5rem;
+}
+
+.top-contact span,
+.top-contact a {
+  margin-left: 1.5rem;
 }
 
 .navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 10%;
+  padding: 1rem 2rem;
 }
 
-.navbar .logo a {
-  text-decoration: none;
-  color: white;
-  font-size: 1.8em;
+.logo a {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #FF6600;
+}
+
+.search-bar {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  flex: 1;
+  margin: 0 2rem;
+}
+
+.search-bar select,
+.search-bar input,
+.search-bar button {
+  padding: 0.5rem;
+  font-size: 1rem;
+}
+
+.search-bar input {
+  flex: 1;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.search-bar button {
+  background-color: #FF6600;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.user-actions i {
+  font-size: 1.5rem;
+  margin-left: 1rem;
+  cursor: pointer;
+}
+
+.menu {
+  background-color: #4CAF50;
+  padding: 0.75rem 2rem;
 }
 
 .menu a {
-  text-decoration: none;
-  color: white;
-  margin-left: 20px;
+  color: #fff;
+  margin-right: 1.5rem;
+  font-weight: bold;
+}
+
+.menu a:hover {
+  text-decoration: underline;
 }
 
 .banner {
   text-align: center;
-  padding: 50px 10%;
-  background: #4CAF50; /* Asegurando que el banner tenga el mismo color verde */
+  padding: 3rem 2rem;
+  background: url('banner.jpg') no-repeat center center/cover;
+  color: #fff;
 }
 
-.banner h1, .banner p {
-  margin: 0;
-  padding: 0;
-  color: white; /* Texto blanco para contraste */
+.banner h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.banner p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
 }
 
 .banner-btn {
-  background-color: #00796b; /* Un verde más oscuro para botones */
-  color: white;
-  padding: 10px 20px;
-  border-radius: 5px;
-  text-decoration: none;
-  display: inline-block;
-  margin-top: 20px;
+  padding: 1rem 2rem;
+  margin: 0.5rem;
+  background-color: #FF6600;
+  color: #fff;
+  border-radius: 4px;
+  cursor: pointer;
 }
 
-.register-link {
-  background-color: #ffeb3b; /* Un color amarillo para destacar */
-  color: #333; /* Texto oscuro para contraste */
-  padding: 10px 20px;
-  border-radius: 5px;
-  text-decoration: none;
-  transition: background-color 0.3s ease-in-out;
+.banner-btn.register-link {
+  background-color: #FFEB3B;
+  color: #333;
 }
 
-.register-link:hover {
-  background-color: #e0c91f; /* Un amarillo más oscuro al pasar el mouse */
+.banner-btn:hover {
+  background-color: #ff9933;
 }
 
 footer {
-  background-color: #263238; /* Color oscuro para el footer */
-  color: white;
+  background-color: #333;
+  color: #fff;
+  padding: 1.5rem 2rem;
   text-align: center;
-  padding: 20px 0;
 }
 
-.footer-content a {
-  color: lightblue;
-  text-decoration: none;
+footer a {
+  color: #FFEB3B;
 }
