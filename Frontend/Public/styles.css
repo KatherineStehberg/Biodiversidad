@@ -152,16 +152,29 @@ header {
   max-width: 50%;
 }
 
-.slider-content h1 {
-  font-size: 2.5rem;
-  color: #333;
-  margin-bottom: 1rem;
+/* New overlay and text styling */
+.slider-content-overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black overlay */
+  padding: 20px;
+  border-radius: 10px;
+  color: white;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+  text-align: center;
 }
 
-.slider-content p {
+.slider-content-overlay h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+.slider-content-overlay p {
   font-size: 1.2rem;
   margin-bottom: 1.5rem;
-  color: #666;
+  color: #fff;
 }
 
 .slider-btn {
@@ -216,7 +229,6 @@ header {
 .slider-navigation a:hover i {
   color: #ff9933; /* Cambia el color del icono al hacer hover */
 }
-
 
 /* Media Queries for Responsive Design */
 @media (max-width: 768px) {
