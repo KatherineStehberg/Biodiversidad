@@ -246,6 +246,114 @@ header {
       max-width: 80%;
   }
 }
+/* Featured Products Section */
+.featured-products {
+  padding: 3rem 2rem;
+  background-color: #f9f9f9;
+}
+
+.featured-products h2 {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  text-align: center;
+  font-weight: bold;
+}
+
+.featured-products-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.featured-product {
+  background-color: #fff;
+  padding: 1rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  flex: 1 1 calc(25% - 1.5rem);
+  text-align: center;
+}
+
+.featured-product .product-image {
+  position: relative;
+  margin-bottom: 1rem;
+}
+
+.featured-product .product-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.featured-product .badge {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background-color: #FF6600;
+  color: #fff;
+  padding: 0.3rem 0.6rem;
+  border-radius: 3px;
+  font-size: 0.8rem;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.featured-product .badge.new {
+  background-color: #4CAF50;
+}
+
+.featured-product .badge.discount {
+  background-color: #FF5722;
+}
+
+.featured-product .product-details h3 {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+  color: #333;
+}
+
+.featured-product .product-details p {
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+  color: #666;
+}
+
+.featured-product .price-container {
+  margin-bottom: 0.5rem;
+}
+
+.featured-product .price {
+  font-size: 1.5rem;
+  color: #FF6600;
+  font-weight: bold;
+}
+
+.featured-product .old-price {
+  font-size: 1rem;
+  color: #999;
+  text-decoration: line-through;
+  margin-left: 0.5rem;
+}
+
+.featured-product .rating {
+  font-size: 1rem;
+  color: #FFD700;
+  margin-top: 0.5rem;
+}
+
+/* Media Queries for Responsive Design */
+@media (max-width: 768px) {
+  .featured-products-container {
+      flex-direction: column;
+      gap: 2rem;
+  }
+
+  .featured-product {
+      flex: 1 1 100%;
+  }
+}
 
 /* Footer styles */
 .footer-content {
