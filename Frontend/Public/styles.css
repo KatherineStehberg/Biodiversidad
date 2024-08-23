@@ -221,13 +221,37 @@ header {
   }
 }
 
-footer {
+/* Footer styles */
+.footer-content {
+  text-align: center;
   background-color: #333;
   color: #fff;
   padding: 1.5rem 2rem;
-  text-align: center;
 }
 
-footer a {
+.footer-content a {
   color: #FFEB3B;
+}
+
+.social-icons {
+  margin: 1rem 0;
+}
+
+.social-icon {
+  font-size: 1.5rem;
+  margin: 0 1rem;
+  color: #FF6600;
+  transition: color 0.3s ease;
+}
+
+.social-icon.instagram:hover {
+  color: #E1306C;
+}
+
+.social-icon.facebook:hover {
+  color: #1877F2;
+}
+
+.social-icon i {
+  vertical-align: middle;
 }
