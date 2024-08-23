@@ -192,15 +192,20 @@ header {
   transform: translateY(-50%);
 }
 
-.nav-left, .nav-right {
+.slider-navigation a {
   background-color: rgba(0, 0, 0, 0.5);
-  color: #fff;
   padding: 0.5rem;
   border-radius: 50%;
   cursor: pointer;
 }
 
-.nav-left:hover, .nav-right:hover {
+.slider-navigation img {
+  width: 24px;
+  height: 24px;
+  vertical-align: middle;
+}
+
+.slider-navigation a:hover {
   background-color: rgba(0, 0, 0, 0.7);
 }
 
