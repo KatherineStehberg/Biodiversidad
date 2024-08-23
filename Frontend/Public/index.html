@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,31 +8,61 @@
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.7.2/font/bootstrap-icons.min.css">
 </head>
+
 <body>
     <header>
+        <div class="top-bar">
+            <div class="top-info">
+                <a href="#">Vende en Biodiversidad</a>
+                <a href="#">Registrarse</a>
+            </div>
+            <div class="top-contact">
+                <span>📞 +56 9 1234 5678</span>
+                <a href="#">Seguimiento de pedido</a>
+                <a href="#">Español</a>
+                <a href="#">CLP</a>
+                <a href="#">Iniciar sesión</a>
+            </div>
+        </div>
+
         <nav class="navbar">
-            <div class="logo"><a href="/">Biodiversidad.cl</a></div>
-            <div class="menu">
-                <a href="#marketplace">Marketplace</a>
-                <a href="#products">Productos</a>
-                <a href="#services">Servicios</a>
-                <a href="#about">Acerca de</a>
-                <a href="#blog">Blog</a>
-                <a href="#contact">Contacto</a>
-                <a href="#login" class="register-link">Iniciar Sesión</a> <!-- Amarillo -->
-                <a href="#register">Registrarse</a> <!-- Blanco -->
+            <div class="logo">
+                <a href="/">Biodiversidad.cl</a>
+            </div>
+            <div class="search-bar">
+                <select>
+                    <option value="all">Todos</option>
+                    <option value="products">Productos</option>
+                    <option value="services">Servicios</option>
+                </select>
+                <input type="text" placeholder="¿Qué estás buscando?">
+                <button>Buscar</button>
+            </div>
+            <div class="user-actions">
+                <i class="bi bi-arrow-repeat"></i>
+                <i class="bi bi-heart"></i>
+                <i class="bi bi-cart"></i>
             </div>
         </nav>
-        <div class="banner">
-            <h1>Descubre Soluciones Sostenibles</h1>
-            <p>Únete a nuestra comunidad y colabora con los mejores expertos en medio ambiente.</p>
-            <a href="#login" class="banner-btn">Iniciar Sesión</a> <!-- Blanco, antes decía Registrarse -->
-            <a href="#register" class="banner-btn register-link">Registrarse</a> <!-- Amarillo, antes decía Iniciar Sesión -->
-        </div>
+        <nav class="menu">
+            <a href="#marketplace">Marketplace</a>
+            <a href="#products">Productos</a>
+            <a href="#services">Servicios</a>
+            <a href="#about">Acerca de</a>
+            <a href="#blog">Blog</a>
+            <a href="#contact">Contacto</a>
+            <a href="#login" class="register-link">Iniciar Sesión</a>
+            <a href="#register">Registrarse</a>
+        </nav>
     </header>
 
     <main>
-        <!-- Contenido principal aquí -->
+        <div class="banner">
+            <h1>Descubre Soluciones Sostenibles</h1>
+            <p>Únete a nuestra comunidad y colabora con los mejores expertos en medio ambiente.</p>
+            <a href="#login" class="banner-btn">Iniciar Sesión</a>
+            <a href="#register" class="banner-btn register-link">Registrarse</a>
+        </div>
     </main>
 
     <footer>
@@ -42,4 +73,5 @@
         </div>
     </footer>
 </body>
+
 </html>
