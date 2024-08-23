@@ -1,37 +1,37 @@
 .cards-section {
-  display: flex;
-  justify-content: space-around;
-  padding: 20px;
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
 }
 
 .card {
-  width: 30%;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-  padding: 20px;
-  margin: 10px;
-  text-align: center;
+    width: 30%;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    padding: 20px;
+    margin: 10px;
+    text-align: center;
 }
 
 .card img {
-  width: 100%;
-  height: auto;
+    width: 100%;
+    height: auto;
 }
 
 .btn {
-  display: inline-block;
-  padding: 10px 20px;
-  margin-top: 20px;
-  background-color: #4CAF50;
-  color: white;
-  text-decoration: none;
-  border-radius: 5px;
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 20px;
+    background-color: #4CAF50;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
 }
 
 .slider-section {
-  padding: 20px;
+    padding: 20px;
 }
 
 .slider div img {
-  width: 100%;
-  border-radius: 5px;
+    width: 100%;
+    border-radius: 5px;
 }
