@@ -1,5 +1,5 @@
 {
-  "name": "biodiversidad",
+  "name": "biodiversidad-frontend",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -143,14 +143,14 @@
     "update-browserslist-db": "^1.1.0",
     "utils-merge": "^1.0.1",
     "vary": "^1.1.2",
+    "vite": "^5.4.2",
     "wrappy": "^1.0.2",
     "yallist": "^3.1.1"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "dev": "vite",
+    "build": "vite build",
+    "serve": "vite preview"
   },
   "keywords": [],
   "author": "",
