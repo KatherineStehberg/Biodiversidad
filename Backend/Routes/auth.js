@@ -1,8 +1,10 @@
+// backend/routes/auth.js
+
 const express = require('express');
 const router = express.Router();
 const bcrypt = require('bcryptjs');
 const jwt = require('jsonwebtoken');
-const db = require('../db'); // Importa el archivo de configuración de PostgreSQL
+const db = require('../database/bd'); // Importa el archivo de configuración de PostgreSQL
 
 // Login de usuario
 router.post('/login', async (req, res) => {
@@ -23,11 +25,16 @@ router.post('/login', async (req, res) => {
     }
 
     // Genera y devuelve un token JWT si la autenticación es exitosa
-    const token = jwt.sign({ userId: user.id }, process.env.JWT_SECRET, { expiresIn: '1h' });
-    res.json({ token });
+    const token = jwt.sign({ userId: user.id, username: user.username }, process.env.JWT_SECRET, { expiresIn: '1h' });
+
+    res.json({ 
+      message: 'Autenticación exitosa',
+      token,
+      user: { id: user.id, username: user.username }
+    });
   } catch (err) {
-    console.error('Error en el login:', err);
-    res.status(500).json({ error: 'Error en el login' });
+    console.error('Error en el login:', err.message);
+    res.status(500).json({ error: 'Ocurrió un error en el login' });
   }
 });
 
@@ -37,8 +44,8 @@ router.post('/register', async (req, res) => {
 
   try {
     // Verifica si el usuario ya existe en la base de datos
-    const existingUser = await db.query('SELECT * FROM users WHERE username = $1', [username]);
-    if (existingUser.rows.length > 0) {
+    const { rows: existingUser } = await db.query('SELECT * FROM users WHERE username = $1', [username]);
+    if (existingUser.length > 0) {
       return res.status(400).json({ message: 'El usuario ya existe' });
     }
 
@@ -46,12 +53,18 @@ router.post('/register', async (req, res) => {
     const hashedPassword = await bcrypt.hash(password, 10);
 
     // Inserta el nuevo usuario en la base de datos
-    const newUser = await db.query('INSERT INTO users (username, password) VALUES ($1, $2) RETURNING *', [username, hashedPassword]);
+    const { rows: newUser } = await db.query(
+      'INSERT INTO users (username, password) VALUES ($1, $2) RETURNING id, username',
+      [username, hashedPassword]
+    );
 
-    res.status(201).json({ message: 'Usuario registrado exitosamente', user: newUser.rows[0] });
+    res.status(201).json({ 
+      message: 'Usuario registrado exitosamente', 
+      user: newUser[0]
+    });
   } catch (err) {
-    console.error('Error en el registro:', err);
-    res.status(500).json({ error: 'Error en el registro' });
+    console.error('Error en el registro:', err.message);
+    res.status(500).json({ error: 'Ocurrió un error en el registro' });
   }
 });
 
