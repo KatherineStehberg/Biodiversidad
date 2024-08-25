@@ -23,6 +23,11 @@ let users = [
   // Más usuarios...
 ];
 
+// Ruta raíz
+app.get('/', (req, res) => {
+  res.send('¡Bienvenido al servidor backend de Biodiversidad!');
+});
+
 // Rutas para proyectos y usuarios
 app.get('/api/projects', (req, res) => {
   res.json(projects);
@@ -36,3 +41,4 @@ app.get('/api/users', (req, res) => {
 app.listen(PORT, () => {
   console.log(`Servidor backend corriendo en http://localhost:${PORT}`);
 });
+
