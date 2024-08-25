@@ -1,7 +1,7 @@
 const express = require('express');
 const bodyParser = require('body-parser');
 const cors = require('cors');
-const projectsRouter = require('./routes/projects'); // Asegúrate de que esta ruta sea correcta
+const projectsRouter = require('./Routes/projects'); // Asegúrate de que esta ruta sea correcta
 const usersRouter = require('./routes/users'); // Si tienes un archivo de rutas para usuarios
 
 const app = express();

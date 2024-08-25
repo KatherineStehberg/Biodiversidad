@@ -1,6 +1,6 @@
 const express = require('express');
 const router = express.Router();
-const db = require('../database/db'); // Asegúrate de que este archivo exista y esté configurado para conectarse a tu base de datos
+const db = require('./../database/db'); // Asegúrate de que este archivo exista y esté configurado para conectarse a tu base de datos
 
 // Obtener todos los usuarios
 router.get('/', async (req, res) => {

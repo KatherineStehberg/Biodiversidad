@@ -1,6 +1,6 @@
 const express = require('express');
 const router = express.Router();
-const db = require('../database/db'); // Asegúrate de que la ruta y el nombre del archivo sean correctos
+const db = require('./../database/db'); // Asegúrate de que la ruta y el nombre del archivo sean correctos
 
 // Obtener todos los proyectos
 router.get('/', async (req, res) => {

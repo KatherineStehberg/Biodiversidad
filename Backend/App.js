@@ -5,7 +5,7 @@ const bodyParser = require('body-parser');
 const cors = require('cors');
 const authRouter = require('./routes/auth'); // Importa las rutas de autenticación
 const pageRouter = require('./routes/pages'); // Importa las rutas de páginas
-const projectRouter = require('./routes/projects'); // Importa las rutas de proyectos
+const projectRouter = require('./Routes/projects'); // Importa las rutas de proyectos
 const db = require('./database/bd'); // Importa el archivo de configuración de PostgreSQL
 
 const app = express();
