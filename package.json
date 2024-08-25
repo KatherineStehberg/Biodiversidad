@@ -110,6 +110,7 @@
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "react-router-dom": "^6.26.1",
+    "react-scripts": "^5.0.1",
     "readdirp": "^3.6.0",
     "regenerate": "^1.4.2",
     "regenerate-unicode-properties": "^10.1.1",
