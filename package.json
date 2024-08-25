@@ -146,8 +146,15 @@
     "wrappy": "^1.0.2",
     "yallist": "^3.1.1"
   },
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+  {
+    "scripts": {
+      "start": "react-scripts start",
+      "build": "react-scripts build",
+      "test": "react-scripts test",
+      "eject": "react-scripts eject"
+    }
+  }
+  
   },
   "keywords": [],
   "author": "",
