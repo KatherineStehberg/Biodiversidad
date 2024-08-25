@@ -11,9 +11,10 @@
         "pg": "^8.7.1"
     },
     "scripts": {
-        "start": "node server.js",
-        "test": "echo \"Error: no test specified\" && exit 1"
-    },
+  "start": "node index.js",
+  "dev": "npx babel-node --watch index.js"
+}
+
     "keywords": [],
     "author": "",
     "license": "ISC"
