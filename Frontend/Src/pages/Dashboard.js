@@ -1,12 +1,14 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useContext } from 'react';
 import axios from 'axios';
+import { AuthContext } from '../context/AuthContext';
 
 const Dashboard = () => {
+  const { user, logout } = useContext(AuthContext); // Uso del contexto de autenticación
   const [projects, setProjects] = useState([]);
   const [users, setUsers] = useState([]);
 
   useEffect(() => {
-    // Fetch projects from backend
+    // Fetch de proyectos desde el backend
     axios.get('/api/projects')
       .then(response => {
         setProjects(response.data);
@@ -15,7 +17,7 @@ const Dashboard = () => {
         console.error('Error fetching projects:', error);
       });
 
-    // Fetch users from backend
+    // Fetch de usuarios desde el backend
     axios.get('/api/users')
       .then(response => {
         setUsers(response.data);
@@ -27,7 +29,9 @@ const Dashboard = () => {
 
   return (
     <div className="container">
-      <h1 className="my-4">Dashboard</h1>
+      <h1 className="my-4">Dashboard de {user?.name}</h1> {/* Nombre del usuario autenticado */}
+      <button className="btn btn-danger mb-4" onClick={logout}>Cerrar sesión</button> {/* Botón de cierre de sesión */}
+
       <div className="row">
         <div className="col-md-6">
           <div className="card">
