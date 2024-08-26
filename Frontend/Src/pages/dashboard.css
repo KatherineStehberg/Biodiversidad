@@ -1,34 +1,10 @@
-/* Reset de estilos */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
 /* Estilos generales */
 body {
     font-family: Arial, sans-serif;
-    background-color: #f0f0f0;
-    line-height: 1.6;
-}
-
-.container {
-    max-width: 960px;
-    margin: 0 auto;
-    padding: 20px;
-}
-
-a {
-    text-decoration: none;
-    color: #007bff;
-}
-
-a:hover {
-    text-decoration: underline;
-}
-
-ul {
-    list-style: none;
+    background-color: #f4f4f4;
+    color: #333;
+    margin: 0;
+    padding: 0;
 }
 
 /* Navbar */
@@ -44,12 +20,17 @@ ul {
     align-items: center;
 }
 
-.navbar .logo {
+.navbar .logo a {
     font-size: 1.5rem;
+    color: #fff;
+    text-decoration: none;
 }
 
 .navbar ul {
+    list-style: none;
     display: flex;
+    margin: 0;
+    padding: 0;
 }
 
 .navbar ul li {
@@ -58,7 +39,12 @@ ul {
 
 .navbar ul li a {
     color: #fff;
+    text-decoration: none;
     padding: 10px;
+}
+
+.navbar ul li a:hover {
+    text-decoration: underline;
 }
 
 /* Dashboard Section */
@@ -66,63 +52,93 @@ ul {
     padding: 40px 0;
 }
 
-.section-title {
-    font-size: 2rem;
-    margin-bottom: 20px;
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
 }
 
-.logout-btn {
-    display: inline-block;
-    padding: 10px 20px;
-    background-color: #dc3545;
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    margin-bottom: 20px;
-}
-
-.logout-btn:hover {
-    background-color: #c82333;
-}
-
-.row {
+/* Perfil */
+.profile-info {
     display: flex;
-    gap: 20px;
+    align-items: center;
+    margin-bottom: 40px;
 }
 
-.col {
+.profile-pic img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    margin-right: 20px;
+}
+
+.profile-details {
     flex: 1;
 }
 
-.card {
-    background-color: #fff;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    overflow: hidden;
+.profile-name {
+    font-size: 2rem;
+    margin-bottom: 10px;
 }
 
-.card-body {
-    padding: 20px;
+.profile-description {
+    font-size: 1.2rem;
+    color: #666;
 }
 
-.card-title {
-    font-size: 1.5rem;
+/* Botón de Cerrar Sesión */
+.logout-btn {
+    margin-top: 20px;
+    padding: 10px 20px;
+}
+
+/* Proyectos y Servicios */
+.user-sections {
+    margin-bottom: 50px;
+}
+
+.section-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     margin-bottom: 20px;
 }
 
-.list-group {
-    list-style: none;
-    padding: 0;
+.section-title h2 {
+    font-size: 1.8rem;
 }
 
-.list-group-item {
-    padding: 10px;
-    border-bottom: 1px solid #ddd;
+.projects-list, .services-list {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
 }
 
-.list-group-item:last-child {
-    border-bottom: none;
+.project-card, .service-card {
+    background-color: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: calc(33.333% - 20px);
+    text-align: center;
+}
+
+.project-card img, .service-card img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    margin-bottom: 15px;
+}
+
+.project-card h3, .service-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.project-card p, .service-card p {
+    font-size: 1rem;
+    color: #777;
 }
 
 /* Footer */
@@ -140,21 +156,18 @@ ul {
 }
 
 .footer ul {
+    list-style: none;
+    padding: 0;
     display: flex;
-}
-
-.footer ul li {
-    margin-right: 10px;
+    gap: 15px;
 }
 
 .footer ul li a {
     color: #fff;
+    text-decoration: none;
 }
 
-.social-media {
-    font-size: 1.5rem;
+.footer ul li a:hover {
+    text-decoration: underline;
 }
 
-.legal-info {
-    font-size: 0.9rem;
-}

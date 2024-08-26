@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dashboard - Biodiversidad.cl</title>
-    <link rel="stylesheet" href="./dashboard.css">
+    <link rel="stylesheet" href="assets/css/dashboard.css">
 </head>
 <body>
     <!-- Navbar -->
@@ -15,7 +15,7 @@
             </div>
             <ul class="nav-links">
                 <li><a href="services.html">Servicios</a></li>
-                <li><a href="products.html">Productos</a></li> <!-- Enlace de Productos ahora en el orden correcto -->
+                <li><a href="products.html">Productos</a></li>
                 <li><a href="experts.html">Expertos</a></li>
                 <li><a href="projects.html">Proyectos</a></li>
                 <li><a href="blog.html">Blog</a></li>
@@ -27,31 +27,48 @@
     <!-- Dashboard Section -->
     <section id="dashboard" class="section">
         <div class="container">
-            <h1 class="section-title">Dashboard de Usuario</h1>
-            <button class="btn btn-danger logout-btn">Cerrar sesión</button>
-
-            <div class="row">
-                <div class="col">
-                    <div class="card">
-                        <div class="card-body">
-                            <h5 class="card-title">Tus Proyectos</h5>
-                            <ul class="list-group">
-                                <!-- Aquí se listarán los proyectos del usuario -->
-                                <li class="list-group-item">No tienes proyectos cargados.</li>
-                            </ul>
-                        </div>
-                    </div>
+            <!-- Información del perfil -->
+            <div class="profile-info">
+                <div class="profile-pic">
+                    <img src="assets/images/profile-pic.jpg" alt="Foto de perfil del usuario">
                 </div>
-                <div class="col">
-                    <div class="card">
-                        <div class="card-body">
-                            <h5 class="card-title">Tus Productos</h5>
-                            <ul class="list-group">
-                                <!-- Aquí se listarán los productos del usuario -->
-                                <li class="list-group-item">No tienes productos cargados.</li>
-                            </ul>
-                        </div>
+                <div class="profile-details">
+                    <h1 class="profile-name">Nombre del Usuario</h1>
+                    <p class="profile-description">Aquí va una breve descripción del usuario, su experiencia, áreas de interés y cualquier otra información relevante.</p>
+                    <button class="btn btn-danger logout-btn">Cerrar sesión</button>
+                </div>
+            </div>
+
+            <!-- Secciones de Proyectos y Servicios -->
+            <div class="user-sections">
+                <div class="section-title">
+                    <h2>Tus Proyectos</h2>
+                    <button class="btn btn-primary">Agregar Proyecto</button>
+                </div>
+                <div class="projects-list">
+                    <!-- Aquí se listarán los proyectos del usuario -->
+                    <div class="project-card">
+                        <img src="assets/images/project1.jpg" alt="Imagen del proyecto">
+                        <h3>Proyecto 1</h3>
+                        <p>Descripción breve del proyecto 1.</p>
                     </div>
+                    <!-- Repetir para más proyectos -->
+                </div>
+            </div>
+
+            <div class="user-sections">
+                <div class="section-title">
+                    <h2>Tus Servicios</h2>
+                    <button class="btn btn-primary">Agregar Servicio</button>
+                </div>
+                <div class="services-list">
+                    <!-- Aquí se listarán los servicios del usuario -->
+                    <div class="service-card">
+                        <img src="assets/images/service1.jpg" alt="Imagen del servicio">
+                        <h3>Servicio 1</h3>
+                        <p>Descripción breve del servicio 1.</p>
+                    </div>
+                    <!-- Repetir para más servicios -->
                 </div>
             </div>
         </div>
@@ -64,7 +81,7 @@
                 <ul>
                     <li><a href="index.html">Inicio</a></li>
                     <li><a href="services.html">Servicios</a></li>
-                    <li><a href="products.html">Productos</a></li> <!-- Enlace de Productos en el pie de página en el orden correcto -->
+                    <li><a href="products.html">Productos</a></li>
                     <li><a href="experts.html">Expertos</a></li>
                     <li><a href="projects.html">Proyectos</a></li>
                     <li><a href="blog.html">Blog</a></li>
