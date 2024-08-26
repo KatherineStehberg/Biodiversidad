@@ -1,6 +1,6 @@
 const bcrypt = require('bcryptjs');
 const jwt = require('jsonwebtoken');
-const db = require('../../db');
+const db = require('./../database/db');
 
 // Función para manejar el login
 async function login(req, res) {
