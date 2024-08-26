@@ -1,287 +1,98 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Proyectos - Biodiversidad.cl</title>
-  <style>
-    /* Estilos generales */
-    
-    /* Reset de estilos */
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-    
-    /* Estilos básicos */
-    body {
-      font-family: Arial, sans-serif;
-      line-height: 1.6;
-      background-color: #f0f0f0;
-    }
-    
-    .container {
-      max-width: 960px;
-      margin: 0 auto;
-      padding: 20px;
-    }
-    
-    a {
-      text-decoration: none;
-      color: #007bff;
-    }
-    
-    a:hover {
-      text-decoration: underline;
-    }
-    
-    ul {
-      list-style: none;
-    }
-    
-    .navbar {
-      background-color: #007bff;
-      color: #fff;
-      padding: 10px 0;
-    }
-    
-    .navbar .container {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-    }
-    
-    .navbar .logo {
-      font-size: 1.5rem;
-    }
-    
-    .navbar ul {
-      display: flex;
-    }
-    
-    .navbar ul li {
-      margin-right: 20px;
-    }
-    
-    .navbar ul li a {
-      color: #fff;
-      padding: 10px;
-    }
-    
-    .header {
-      background-color: #343a40;
-      color: #fff;
-      text-align: center;
-      padding: 80px 0;
-    }
-    
-    .header .container {
-      max-width: 600px;
-    }
-    
-    .section {
-      padding: 40px 0;
-    }
-    
-    .section-title {
-      font-size: 2.5rem;
-      margin-bottom: 20px;
-    }
-    
-    .section-description {
-      font-size: 1.1rem;
-      line-height: 1.8;
-      margin-bottom: 20px;
-    }
-    
-    .btn {
-      display: inline-block;
-      padding: 10px 20px;
-      background-color: #007bff;
-      color: #fff;
-      border: none;
-      border-radius: 5px;
-      cursor: pointer;
-      text-decoration: none;
-    }
-    
-    .btn:hover {
-      background-color: #0056b3;
-    }
-    
-    .footer {
-      background-color: #343a40;
-      color: #fff;
-      padding: 20px 0;
-      text-align: center;
-    }
-    
-    .footer .container {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-    }
-    
-    .footer ul {
-      display: flex;
-    }
-    
-    .footer ul li {
-      margin-right: 10px;
-    }
-    
-    .footer ul li a {
-      color: #fff;
-    }
-    
-    .social-media {
-      font-size: 1.5rem;
-    }
-    
-    .legal-info {
-      font-size: 0.9rem;
-    }
-    
-    /* Estilos específicos para projects.html */
-    
-    .projects {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 20px;
-    }
-    
-    .project-card {
-      flex: 1 1 calc(33.333% - 20px);
-      background-color: #ffffff;
-      border-radius: 10px;
-      overflow: hidden;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-      transition: transform 0.3s ease;
-    }
-    
-    .project-card:hover {
-      transform: translateY(-5px);
-    }
-    
-    .project-image {
-      width: 100%;
-      height: 200px;
-      object-fit: cover;
-    }
-    
-    .project-content {
-      padding: 20px;
-    }
-    
-    .project-title {
-      font-size: 1.5rem;
-      margin-bottom: 10px;
-    }
-    
-    .project-description {
-      font-size: 1rem;
-      line-height: 1.6;
-      margin-bottom: 20px;
-    }
-    
-    .project-link {
-      color: #007bff;
-      text-decoration: none;
-      font-weight: bold;
-    }
-    
-    .project-link:hover {
-      text-decoration: underline;
-    }
-    
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyectos - Biodiversidad.cl</title>
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.7.2/font/bootstrap-icons.min.css">
 </head>
+
 <body>
-
-  <!-- Navbar -->
-  <nav class="navbar">
-    <div class="container">
-      <div class="logo">
-        <a href="/">Biodiversidad.cl</a>
-      </div>
-      <ul class="nav-links">
-        <li><a href="./services.html">Servicios</a></li>
-        <li><a href="./experts.html">Expertos</a></li>
-        <li><a href="./projects.html">Proyectos</a></li>
-        <li><a href="./blog.html">Blog</a></li>
-        <li><a href="./contact.html">Contacto</a></li>
-      </ul>
-    </div>
-  </nav>
-
-  <!-- Header -->
-  <header class="header">
-    <div class="container">
-      <h1 class="main-title">Nuestros Proyectos</h1>
-    </div>
-  </header>
-
-  <!-- Projects Section -->
-  <section id="projects" class="section">
-    <div class="container">
-      <h2 class="section-title">Proyectos Destacados</h2>
-      <p class="section-description">A continuación, te presentamos algunos de los proyectos más destacados en los que hemos trabajado, demostrando nuestro compromiso con la biodiversidad y el medio ambiente.</p>
-      <div class="projects">
-        <div class="project-card">
-          <img src="https://via.placeholder.com/300" alt="Project Image 1" class="project-image">
-          <div class="project-content">
-            <h3 class="project-title">Proyecto 1</h3>
-            <p class="project-description">Descripción breve del proyecto 1. Este proyecto se centra en la conservación de especies en peligro de extinción en la región.</p>
-            <a href="#" class="project-link">Leer más...</a>
-          </div>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">
+                <a href="/">Biodiversidad.cl</a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="/">Inicio</a></li>
+                <li><a href="/services.html">Servicios</a></li>
+                <li><a href="/experts.html">Expertos</a></li>
+                <li><a href="/projects.html">Proyectos</a></li>
+                <li><a href="/blog.html">Blog</a></li>
+                <li><a href="/contact.html">Contacto</a></li>
+                <li><a href="/login.html" class="register-link">Iniciar Sesión</a></li>
+                <li><a href="/register.html">Registrarse</a></li>
+            </ul>
         </div>
-        <div class="project-card">
-          <img src="https://via.placeholder.com/300" alt="Project Image 2" class="project-image">
-          <div class="project-content">
-            <h3 class="project-title">Proyecto 2</h3>
-            <p class="project-description">Descripción breve del proyecto 2. Este proyecto promueve la reforestación de áreas afectadas por incendios forestales.</p>
-            <a href="#" class="project-link">Leer más...</a>
-          </div>
-        </div>
-        <div class="project-card">
-          <img src="https://via.placeholder.com/300" alt="Project Image 3" class="project-image">
-          <div class="project-content">
-            <h3 class="project-title">Proyecto 3</h3>
-            <p class="project-description">Descripción breve del proyecto 3. Este proyecto aborda la contaminación de ríos y lagos en áreas urbanas.</p>
-            <a href="#" class="project-link">Leer más...</a>
-          </div>
-        </div>
-        <!-- Puedes agregar más tarjetas de proyectos aquí -->
-      </div>
-    </div>
-  </section>
+    </nav>
 
-  <!-- Footer -->
-  <footer class="footer">
-    <div class="container">
-      <div class="quick-links">
-        <ul>
-          <li><a href="./index.html">Inicio</a></li>
-          <li><a href="./services.html">Servicios</a></li>
-          <li><a href="./experts.html">Expertos</a></li>
-          <li><a href="./projects.html">Proyectos</a></li>
-          <li><a href="./blog.html">Blog</a></li>
-          <li><a href="./contact.html">Contacto</a></li>
-        </ul>
-      </div>
-      <div class="social-media">
-        <p>Síguenos:</p>
-        <!-- Aquí puedes agregar íconos de redes sociales con enlaces -->
-      </div>
-      <div class="legal-info">
-        <ul>
-          <li><a href="#terms">Términos y condiciones</a></li>
-          <li><a href="#privacy">Política de privacidad</a></li>
-        </ul>
-      </div>
-    </div>
-  </footer>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <h1 class="main-title">Nuestros Proyectos</h1>
+            <p class="header-description">Conoce los proyectos destacados en biodiversidad y sostenibilidad en los que estamos trabajando para hacer un impacto positivo en el medio ambiente.</p>
+        </div>
+    </header>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section">
+        <div class="container">
+            <h2 class="section-title">Proyectos Destacados</h2>
+            <p class="section-description">Aquí te mostramos algunos de los proyectos en los que estamos comprometidos para preservar y proteger la biodiversidad.</p>
+            <div class="projects">
+                <div class="project-card">
+                    <img src="https://via.placeholder.com/300" alt="Imagen del Proyecto 1" class="project-image">
+                    <div class="project-content">
+                        <h3 class="project-title">Proyecto 1</h3>
+                        <p class="project-description">Conservación de especies en peligro de extinción en la región.</p>
+                        <a href="#" class="project-link">Leer más...</a>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <img src="https://via.placeholder.com/300" alt="Imagen del Proyecto 2" class="project-image">
+                    <div class="project-content">
+                        <h3 class="project-title">Proyecto 2</h3>
+                        <p class="project-description">Reforestación de áreas afectadas por incendios forestales.</p>
+                        <a href="#" class="project-link">Leer más...</a>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <img src="https://via.placeholder.com/300" alt="Imagen del Proyecto 3" class="project-image">
+                    <div class="project-content">
+                        <h3 class="project-title">Proyecto 3</h3>
+                        <p class="project-description">Reducción de la contaminación en ríos y lagos urbanos.</p>
+                        <a href="#" class="project-link">Leer más...</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-links">
+                <ul>
+                    <li><a href="/">Inicio</a></li>
+                    <li><a href="/services.html">Servicios</a></li>
+                    <li><a href="/experts.html">Expertos</a></li>
+                    <li><a href="/projects.html">Proyectos</a></li>
+                    <li><a href="/blog.html">Blog</a></li>
+                    <li><a href="/contact.html">Contacto</a></li>
+                </ul>
+            </div>
+            <div class="social-media">
+                <p>Síguenos:</p>
+                <a href="https://www.instagram.com" target="_blank" class="social-icon instagram"><i class="bi bi-instagram"></i></a>
+                <a href="https://www.facebook.com" target="_blank" class="social-icon facebook"><i class="bi bi-facebook"></i></a>
+            </div>
+            <p>&copy; 2024 Biodiversidad.cl. Todos los derechos reservados.</p>
+        </div>
+    </footer>
 
 </body>
+
 </html>
