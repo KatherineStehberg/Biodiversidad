@@ -2,7 +2,7 @@
 
 const express = require('express');
 const router = express.Router();
-const db = require('../database/db'); // Asegúrate de que esta ruta sea correcta
+const db = require('./../../../Backend/database/db'); // Asegúrate de que esta ruta sea correcta
 
 // Obtener todos los productos
 router.get('/', async (req, res) => {

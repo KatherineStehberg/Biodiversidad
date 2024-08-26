@@ -11,11 +11,12 @@ import Contact from './pages/Contact';
 import Login from './pages/Login';
 import Register from './pages/Register';
 import Dashboard from './pages/Dashboard';
-import { AuthProvider } from './context/AuthContext'; // Importar el proveedor de contexto de autenticación
+import Products from './pages/Products'; // Importar el componente de productos
+import { AuthProvider } from './context/AuthContext';
 
 const App = () => {
   return (
-    <AuthProvider> {/* Envolver la aplicación con el AuthProvider */}
+    <AuthProvider>
       <Router>
         <Navbar />
         <Routes>
@@ -28,6 +29,7 @@ const App = () => {
           <Route path="/login" element={<Login />} />
           <Route path="/register" element={<Register />} />
           <Route path="/dashboard" element={<Dashboard />} />
+          <Route path="/products" element={<Products />} /> {/* Nueva ruta para productos */}
         </Routes>
         <Footer />
       </Router>
@@ -36,3 +38,4 @@ const App = () => {
 };
 
 export default App;
+
