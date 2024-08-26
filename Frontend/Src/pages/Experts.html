@@ -1,295 +1,102 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Expertos - Biodiversidad.cl</title>
-  <style>
-    /* Estilos generales */
-
-    /* Reset de estilos */
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-
-    /* Estilos básicos */
-    body {
-      font-family: Arial, sans-serif;
-      line-height: 1.6;
-      background-color: #f0f0f0;
-    }
-
-    .container {
-      max-width: 960px;
-      margin: 0 auto;
-      padding: 20px;
-    }
-
-    a {
-      text-decoration: none;
-      color: #007bff;
-    }
-
-    a:hover {
-      text-decoration: underline;
-    }
-
-    ul {
-      list-style: none;
-    }
-
-    .navbar {
-      background-color: #007bff;
-      color: #fff;
-      padding: 10px 0;
-    }
-
-    .navbar .container {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-    }
-
-    .navbar .logo {
-      font-size: 1.5rem;
-    }
-
-    .navbar ul {
-      display: flex;
-    }
-
-    .navbar ul li {
-      margin-right: 20px;
-    }
-
-    .navbar ul li a {
-      color: #fff;
-      padding: 10px;
-    }
-
-    .header {
-      background-color: #343a40;
-      color: #fff;
-      text-align: center;
-      padding: 80px 0;
-    }
-
-    .header .container {
-      max-width: 600px;
-    }
-
-    .section {
-      padding: 40px 0;
-    }
-
-    .section-title {
-      font-size: 2.5rem;
-      margin-bottom: 20px;
-    }
-
-    .section-description {
-      font-size: 1.1rem;
-      line-height: 1.8;
-      margin-bottom: 20px;
-    }
-
-    .btn {
-      display: inline-block;
-      padding: 10px 20px;
-      background-color: #007bff;
-      color: #fff;
-      border: none;
-      border-radius: 5px;
-      cursor: pointer;
-      text-decoration: none;
-    }
-
-    .btn:hover {
-      background-color: #0056b3;
-    }
-
-    .footer {
-      background-color: #343a40;
-      color: #fff;
-      padding: 20px 0;
-      text-align: center;
-    }
-
-    .footer .container {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-    }
-
-    .footer ul {
-      display: flex;
-    }
-
-    .footer ul li {
-      margin-right: 10px;
-    }
-
-    .footer ul li a {
-      color: #fff;
-    }
-
-    .social-media {
-      font-size: 1.5rem;
-    }
-
-    .legal-info {
-      font-size: 0.9rem;
-    }
-
-    /* Estilos específicos para experts.html */
-    
-    .experts {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 20px;
-    }
-
-    .expert-card {
-      flex: 1 1 calc(33.333% - 20px);
-      background-color: #ffffff;
-      border-radius: 10px;
-      overflow: hidden;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-      transition: transform 0.3s ease;
-    }
-
-    .expert-card:hover {
-      transform: translateY(-5px);
-    }
-
-    .expert-image {
-      width: 100%;
-      height: 200px;
-      object-fit: cover;
-    }
-
-    .expert-content {
-      padding: 20px;
-    }
-
-    .expert-name {
-      font-size: 1.5rem;
-      margin-bottom: 10px;
-    }
-
-    .expert-title {
-      font-size: 1.1rem;
-      color: #555;
-      margin-bottom: 15px;
-    }
-
-    .expert-description {
-      font-size: 1rem;
-      line-height: 1.6;
-      margin-bottom: 20px;
-    }
-
-    .expert-link {
-      color: #007bff;
-      text-decoration: none;
-      font-weight: bold;
-    }
-
-    .expert-link:hover {
-      text-decoration: underline;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expertos - Biodiversidad.cl</title>
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.7.2/font/bootstrap-icons.min.css">
 </head>
+
 <body>
-
-  <!-- Navbar -->
-  <nav class="navbar">
-    <div class="container">
-      <div class="logo">
-        <a href="/">Biodiversidad.cl</a>
-      </div>
-      <ul class="nav-links">
-        <li><a href="./services.html">Servicios</a></li>
-        <li><a href="./experts.html">Expertos</a></li>
-        <li><a href="./projects.html">Proyectos</a></li>
-        <li><a href="./blog.html">Blog</a></li>
-        <li><a href="./contact.html">Contacto</a></li>
-      </ul>
-    </div>
-  </nav>
-
-  <!-- Header -->
-  <header class="header">
-    <div class="container">
-      <h1 class="main-title">Nuestros Expertos</h1>
-    </div>
-  </header>
-
-  <!-- Experts Section -->
-  <section id="experts" class="section">
-    <div class="container">
-      <h2 class="section-title">Conoce a nuestros expertos</h2>
-      <p class="section-description">Nuestro equipo está compuesto por profesionales altamente capacitados y dedicados a la conservación y biodiversidad.</p>
-      <div class="experts">
-        <div class="expert-card">
-          <img src="https://via.placeholder.com/300" alt="Expert Image 1" class="expert-image">
-          <div class="expert-content">
-            <h3 class="expert-name">Nombre del Experto 1</h3>
-            <p class="expert-title">Título del Experto</p>
-            <p class="expert-description">Breve descripción del experto 1. Destaca su experiencia y contribuciones en el campo de la biodiversidad.</p>
-            <a href="#" class="expert-link">Leer más...</a>
-          </div>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">
+                <a href="/">Biodiversidad.cl</a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="/">Inicio</a></li>
+                <li><a href="/services.html">Servicios</a></li>
+                <li><a href="/experts.html">Expertos</a></li>
+                <li><a href="/projects.html">Proyectos</a></li>
+                <li><a href="/blog.html">Blog</a></li>
+                <li><a href="/contact.html">Contacto</a></li>
+                <li><a href="/login.html" class="register-link">Iniciar Sesión</a></li>
+                <li><a href="/register.html">Registrarse</a></li>
+            </ul>
         </div>
-        <div class="expert-card">
-          <img src="https://via.placeholder.com/300" alt="Expert Image 2" class="expert-image">
-          <div class="expert-content">
-            <h3 class="expert-name">Nombre del Experto 2</h3>
-            <p class="expert-title">Título del Experto</p>
-            <p class="expert-description">Breve descripción del experto 2. Destaca su experiencia y contribuciones en el campo de la biodiversidad.</p>
-            <a href="#" class="expert-link">Leer más...</a>
-          </div>
-        </div>
-        <div class="expert-card">
-          <img src="https://via.placeholder.com/300" alt="Expert Image 3" class="expert-image">
-          <div class="expert-content">
-            <h3 class="expert-name">Nombre del Experto 3</h3>
-            <p class="expert-title">Título del Experto</p>
-            <p class="expert-description">Breve descripción del experto 3. Destaca su experiencia y contribuciones en el campo de la biodiversidad.</p>
-            <a href="#" class="expert-link">Leer más...</a>
-          </div>
-        </div>
-        <!-- Puedes agregar más tarjetas de expertos aquí -->
-      </div>
-    </div>
-  </section>
+    </nav>
 
-  <!-- Footer -->
-  <footer class="footer">
-    <div class="container">
-      <div class="quick-links">
-        <ul>
-          <li><a href="./index.html">Inicio</a></li>
-          <li><a href="./services.html">Servicios</a></li>
-          <li><a href="./experts.html">Expertos</a></li>
-          <li><a href="./projects.html">Proyectos</a></li>
-          <li><a href="./blog.html">Blog</a></li>
-          <li><a href="./contact.html">Contacto</a></li>
-        </ul>
-      </div>
-      <div class="social-media">
-        <p>Síguenos:</p>
-        <!-- Aquí puedes agregar íconos de redes sociales con enlaces -->
-      </div>
-      <div class="legal-info">
-        <ul>
-          <li><a href="#terms">Términos y condiciones</a></li>
-          <li><a href="#privacy">Política de privacidad</a></li>
-        </ul>
-      </div>
-    </div>
-  </footer>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <h1 class="main-title">Nuestros Expertos</h1>
+            <p class="header-description">Conoce a los profesionales que lideran en el ámbito de la biodiversidad y la sostenibilidad.</p>
+        </div>
+    </header>
+
+    <!-- Experts Section -->
+    <section id="experts" class="section">
+        <div class="container">
+            <h2 class="section-title">Conoce a nuestros expertos</h2>
+            <p class="section-description">Nuestro equipo está compuesto por profesionales apasionados y altamente capacitados, dedicados a la conservación y biodiversidad.</p>
+            <div class="experts">
+                <div class="expert-card">
+                    <img src="https://via.placeholder.com/300" alt="Imagen del Experto 1" class="expert-image">
+                    <div class="expert-content">
+                        <h3 class="expert-name">María González</h3>
+                        <p class="expert-title">Especialista en Conservación de la Biodiversidad</p>
+                        <p class="expert-description">Con más de 15 años de experiencia, María es una referente en la protección y recuperación de ecosistemas.</p>
+                        <a href="#" class="expert-link">Leer más...</a>
+                    </div>
+                </div>
+                <div class="expert-card">
+                    <img src="https://via.placeholder.com/300" alt="Imagen del Experto 2" class="expert-image">
+                    <div class="expert-content">
+                        <h3 class="expert-name">Juan Pérez</h3>
+                        <p class="expert-title">Consultor en Sostenibilidad</p>
+                        <p class="expert-description">Juan asesora a organizaciones en la implementación de prácticas sostenibles, ayudando a reducir su huella ecológica.</p>
+                        <a href="#" class="expert-link">Leer más...</a>
+                    </div>
+                </div>
+                <div class="expert-card">
+                    <img src="https://via.placeholder.com/300" alt="Imagen del Experto 3" class="expert-image">
+                    <div class="expert-content">
+                        <h3 class="expert-name">Ana Rodríguez</h3>
+                        <p class="expert-title">Educadora Ambiental</p>
+                        <p class="expert-description">Ana es una apasionada de la educación y concienciación ambiental, trabajando en comunidades locales para generar impacto.</p>
+                        <a href="#" class="expert-link">Leer más...</a>
+                    </div>
+                </div>
+                <!-- Puedes agregar más tarjetas de expertos aquí -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-links">
+                <ul>
+                    <li><a href="/">Inicio</a></li>
+                    <li><a href="/services.html">Servicios</a></li>
+                    <li><a href="/experts.html">Expertos</a></li>
+                    <li><a href="/projects.html">Proyectos</a></li>
+                    <li><a href="/blog.html">Blog</a></li>
+                    <li><a href="/contact.html">Contacto</a></li>
+                </ul>
+            </div>
+            <div class="social-media">
+                <p>Síguenos:</p>
+                <a href="https://www.instagram.com" target="_blank" class="social-icon instagram"><i class="bi bi-instagram"></i></a>
+                <a href="https://www.facebook.com" target="_blank" class="social-icon facebook"><i class="bi bi-facebook"></i></a>
+            </div>
+            <p>&copy; 2024 Biodiversidad.cl. Todos los derechos reservados.</p>
+        </div>
+    </footer>
 
 </body>
+
 </html>
