@@ -1,0 +1,84 @@
+/* Reset de estilos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Estilo del cuerpo */
+  body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f5f0;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  /* Contenedor principal */
+  .signup-container {
+    background-color: #ffffff;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 500px;
+  }
+  
+  /* Título del formulario */
+  .signup-container h2 {
+    font-size: 2rem;
+    color: #009688;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  /* Estilo de los campos de entrada */
+  .signup-container input[type="text"],
+  .signup-container input[type="email"],
+  .signup-container input[type="password"] {
+    width: 100%;
+    padding: 12px 15px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+  }
+  
+  /* Estilo del botón de envío */
+  .signup-container button {
+    width: 100%;
+    padding: 12px;
+    background-color: #009688;
+    color: #ffffff;
+    font-size: 1rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  /* Hover en el botón */
+  .signup-container button:hover {
+    background-color: #00796b;
+  }
+  
+  /* Enlace al inicio de sesión */
+  .signup-container p {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 0.9rem;
+  }
+  
+  .signup-container p a {
+    color: #009688;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .signup-container p a:hover {
+    text-decoration: underline;
+  }
+  
