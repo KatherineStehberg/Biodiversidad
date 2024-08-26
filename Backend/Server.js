@@ -1,9 +1,10 @@
 const express = require('express');
 const bodyParser = require('body-parser');
 const cors = require('cors');
-const projectsRouter = require('./Routes/projects'); // Ruta para proyectos
+const projectsRouter = require('./routes/projects'); // Ruta para proyectos
 const usersRouter = require('./routes/users'); // Ruta para usuarios
-const servicesRouter = require('./routes/services'); // Nueva ruta para servicios
+const servicesRouter = require('./routes/services'); // Ruta para servicios
+const productsRouter = require('./routes/products'); // Nueva ruta para productos
 
 const app = express();
 const PORT = process.env.PORT || 5000;
@@ -18,10 +19,11 @@ app.get('/', (req, res) => {
   res.send('¡Bienvenido al servidor backend de Biodiversidad!');
 });
 
-// Rutas para proyectos, usuarios y servicios
+// Rutas para proyectos, usuarios, servicios y productos
 app.use('/api/projects', projectsRouter);
 app.use('/api/users', usersRouter);
-app.use('/api/services', servicesRouter); // Nueva ruta para servicios
+app.use('/api/services', servicesRouter);
+app.use('/api/products', productsRouter); // Nueva ruta para productos
 
 // Iniciar el servidor
 app.listen(PORT, () => {

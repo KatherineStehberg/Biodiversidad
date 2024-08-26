@@ -1,40 +1,34 @@
-import React, { useState, useEffect } from 'react';
-import axios from 'axios';
+// backend/routes/products.js
 
-const Products = () => {
-  const [products, setProducts] = useState([]);
+const express = require('express');
+const router = express.Router();
+const db = require('../database/db'); // Asegúrate de que esta ruta sea correcta
 
-  useEffect(() => {
-    // Simulación de fetching de productos desde el backend
-    axios.get('/api/products')
-      .then(response => {
-        setProducts(response.data);
-      })
-      .catch(error => {
-        console.error('Error al cargar los productos:', error);
-      });
-  }, []);
+// Obtener todos los productos
+router.get('/', async (req, res) => {
+  try {
+    const { rows } = await db.query('SELECT * FROM products');
+    res.json(rows);
+  } catch (err) {
+    console.error('Error al obtener los productos:', err.message);
+    res.status(500).json({ message: 'Error al obtener los productos' });
+  }
+});
 
-  return (
-    <div className="container">
-      <h1 className="my-4">Productos Disponibles</h1>
-      <div className="row">
-        {products.map(product => (
-          <div key={product.id} className="col-md-4">
-            <div className="card mb-4">
-              <img src={product.image} className="card-img-top" alt={product.name} />
-              <div className="card-body">
-                <h5 className="card-title">{product.name}</h5>
-                <p className="card-text">{product.description}</p>
-                <p className="card-text"><strong>Precio:</strong> ${product.price}</p>
-                <button className="btn btn-primary">Agregar al carrito</button>
-              </div>
-            </div>
-          </div>
-        ))}
-      </div>
-    </div>
-  );
-};
+// Agregar un nuevo producto
+router.post('/', async (req, res) => {
+  const { name, description, price, image } = req.body;
 
-export default Products;
+  try {
+    const { rows } = await db.query(
+      'INSERT INTO products (name, description, price, image) VALUES ($1, $2, $3, $4) RETURNING *',
+      [name, description, price, image]
+    );
+    res.status(201).json(rows[0]);
+  } catch (err) {
+    console.error('Error al agregar el producto:', err.message);
+    res.status(500).json({ message: 'Error al agregar el producto' });
+  }
+});
+
+module.exports = router;
