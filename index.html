@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biodiversidad.cl - Conectando a los apasionados por el medio ambiente</title>
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.7.2/font/bootstrap-icons.min.css">
+
+  <body>
+    <div id="root"></div>
+    <script type="module" src="./Frontend/Src/main.jsx"></script>
+  </body>
+</html>
+
+<body>
+    <header>
+        <!-- Top Bar -->
+        <div class="top-bar">
+            <div class="top-info">
+                <a href="#">Vende en Biodiversidad</a>
+                <a href="#">Registrarse</a>
+            </div>
+            <div class="top-contact">
+                <span>📞 +56 9 1234 5678</span>
+                <a href="#">Seguimiento de pedido</a>
+                <a href="#">Español</a>
+                <a href="#">CLP</a>
+                <a href="#">Iniciar sesión</a>
+            </div>
+        </div>
+
+        <!-- Navbar -->
+        <nav class="navbar">
+            <div class="logo">
+                <a href="/">Biodiversidad.cl</a>
+            </div>
+            <div class="search-bar">
+                <select>
+                    <option value="all">Todos</option>
+                    <option value="products">Productos</option>
+                    <option value="services">Servicios</option>
+                </select>
+                <input type="text" placeholder="¿Qué estás buscando?">
+                <button>Buscar</button>
+            </div>
+            <div class="user-actions">
+                <i class="bi bi-arrow-repeat"></i>
+                <i class="bi bi-heart"></i>
+                <i class="bi bi-cart"></i>
+            </div>
+        </nav>
+
+        <!-- Main Menu -->
+        <nav class="menu">
+            <a href="#marketplace">Marketplace</a>
+            <a href="#products">Productos</a>
+            <a href="#services">Servicios</a>
+            <a href="#about">Acerca de</a>
+            <a href="#blog">Blog</a>
+            <a href="#contact">Contacto</a>
+            <a href="#login" class="register-link">Iniciar Sesión</a>
+            <a href="#register">Registrarse</a>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Slider Section -->
+        <section class="slider-section">
+            <div class="slider-container">
+                <div class="slider-content">
+                    <h1>Conectando con la Naturaleza y Soluciones Sostenibles</h1>
+                    <p>Explora nuestras ofertas y únete a un estilo de vida más consciente.</p>
+                    <a href="#shop" class="slider-btn">Explorar</a>
+                </div>
+                <div class="slider-images">
+                    <img src="./Frontend/Src/assets/images/slider imagebiodiversidad.jpg" alt="Imagen relacionada a biodiversidad">
+                </div>
+            </div>
+            <div class="slider-navigation">
+              <a href="#" class="nav-left"><i class="bi bi-chevron-left"></i></a>
+              <a href="#" class="nav-right"><i class="bi bi-chevron-right"></i></a>
+          </div>
+          
+        </section>
+
+        <!-- Existing Content or Banner -->
+        <div class="banner">
+            <h2>Descubre Soluciones Sostenibles</h2>
+            <p>Únete a nuestra comunidad y colabora con los mejores expertos en medio ambiente.</p>
+            <a href="#login" class="banner-btn">Iniciar Sesión</a>
+            <a href="#register" class="banner-btn register-link">Registrarse</a>
+        </div>
+
+        <section class="featured-products">
+          <h2>Productos Destacados</h2>
+          <div class="featured-products-container">
+              <!-- Product 1 -->
+              <div class="featured-product">
+                  <div class="product-image">
+                      <img src="path/to/your/product1.jpg" alt="Product 1">
+                      <span class="badge hot">Hot</span>
+                  </div>
+                  <div class="product-details">
+                      <h3>Kit de jardinería</h3>
+                      <p>Solo desde <span class="price">$9.99</span></p>
+                  </div>
+              </div>
+              <!-- Product 2 -->
+              <div class="featured-product">
+                  <div class="product-image">
+                      <img src="path/to/your/product2.jpg" alt="Product 2">
+                      <span class="badge new">Nuevo</span>
+                  </div>
+                  <div class="product-details">
+                      <h3>Nombre del Producto 2</h3>
+                      <p>1 por pack</p>
+                      <div class="price-container">
+                          <span class="price">$4.49</span>
+                          <span class="old-price">$5.90</span>
+                      </div>
+                      <div class="rating">
+                          ★★★★☆ (6)
+                      </div>
+                  </div>
+              </div>
+              <!-- Product 3 -->
+              <div class="featured-product">
+                  <div class="product-image">
+                      <img src="path/to/your/product3.jpg" alt="Product 3">
+                      <span class="badge discount">90% Off</span>
+                  </div>
+                  <div class="product-details">
+                      <h3>Nombre del Producto 3</h3>
+                      <p>1 por pack</p>
+                      <div class="price-container">
+                          <span class="price">$3.99</span>
+                          <span class="old-price">$4.90</span>
+                      </div>
+                      <div class="rating">
+                          ★★★☆☆ (10)
+                      </div>
+                  </div>
+              </div>
+              <!-- Product 4 -->
+              <div class="featured-product">
+                  <div class="product-image">
+                      <img src="path/to/your/product4.jpg" alt="Product 4">
+                  </div>
+                  <div class="product-details">
+                      <h3>Nombre del Producto 4</h3>
+                      <p>1 por pack</p>
+                      <div class="price-container">
+                          <span class="price">$5.90</span>
+                      </div>
+                      <div class="rating">
+                          ★★★★☆ (13)
+                      </div>
+                  </div>
+              </div>
+              <!-- Product 5 -->
+              <div class="featured-product">
+                  <div class="product-image">
+                      <img src="path/to/your/product5.jpg" alt="Product 5">
+                  </div>
+                  <div class="product-details">
+                      <h3>Nombre del Producto 5</h3>
+                      <p>1 por pack</p>
+                      <div class="price-container">
+                          <span class="price">$6.99</span>
+                      </div>
+                      <div class="rating">
+                          ★★★☆☆ (8)
+                      </div>
+                  </div>
+              </div>
+              <!-- Product 6 -->
+              <div class="featured-product">
+                  <div class="product-image">
+                      <img src="path/to/your/product6.jpg" alt="Product 6">
+                  </div>
+                  <div class="product-details">
+                      <h3>Nombre del Producto 6</h3>
+                      <p>1 por pack</p>
+                      <div class="price-container">
+                          <span class="price">$7.49</span>
+                      </div>
+                      <div class="rating">
+                          ★★★★☆ (15)
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </section>
+      
+      <section class="featured-services">
+          <h2>Servicios Destacados</h2>
+          <div class="featured-products-container">
+              <!-- Service 1 -->
+              <div class="featured-product">
+                  <div class="product-image">
+                      <img src="path/to/your/service1.jpg" alt="Service 1">
+                  </div>
+                  <div class="product-details">
+                      <h3>Nombre del Servicio 1</h3>
+                      <p>Desde <span class="price">$49.99</span></p>
+                  </div>
+              </div>
+              <!-- Service 2 -->
+              <div class="featured-product">
+                  <div class="product-image">
+                      <img src="path/to/your/service2.jpg" alt="Service 2">
+                  </div>
+                  <div class="product-details">
+                      <h3>Nombre del Servicio 2</h3>
+                      <p>Desde <span class="price">$59.99</span></p>
+                  </div>
+              </div>
+              <!-- Service 3 -->
+              <div class="featured-product">
+                  <div class="product-image">
+                      <img src="path/to/your/service3.jpg" alt="Service 3">
+                  </div>
+                  <div class="product-details">
+                      <h3>Nombre del Servicio 3</h3>
+                      <p>Desde <span class="price">$69.99</span></p>
+                  </div>
+              </div>
+              <!-- Service 4 -->
+              <div class="featured-product">
+                  <div class="product-image">
+                      <img src="path/to/your/service4.jpg" alt="Service 4">
+                  </div>
+                  <div class="product-details">
+                      <h3>Nombre del Servicio 4</h3>
+                      <p>Desde <span class="price">$79.99</span></p>
+                  </div>
+              </div>
+              <!-- Service 5 -->
+              <div class="featured-product">
+                  <div class="product-image">
+                      <img src="path/to/your/service5.jpg" alt="Service 5">
+                  </div>
+                  <div class="product-details">
+                      <h3>Nombre del Servicio 5</h3>
+                      <p>Desde <span class="price">$89.99</span></p>
+                  </div>
+              </div>
+              <!-- Service 6 -->
+              <div class="featured-product">
+                  <div class="product-image">
+                      <img src="path/to/your/service6.jpg" alt="Service 6">
+                  </div>
+                  <div class="product-details">
+                      <h3>Nombre del Servicio 6</h3>
+                      <p>Desde <span class="price">$99.99</span></p>
+                  </div>
+              </div>
+          </div>
+      </section>
+      
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p>Dirección: Avenida Egaña 1638, B. Peñalolén, Santiago, Chile</p>
+            <p>Contacto: <a href="mailto:info@biodiversidad.cl">info@biodiversidad.cl</a></p>
+            <div class="social-icons">
+                <a href="https://www.instagram.com" target="_blank" class="social-icon instagram">
+                    <i class="bi bi-instagram"></i>
+                </a>
+                <a href="https://www.facebook.com" target="_blank" class="social-icon facebook">
+                    <i class="bi bi-facebook"></i>
+                </a>
+            </div>
+            <p>&copy; 2024 Biodiversidad.cl. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+</body>
+
+</html>
+
+

@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blog - Biodiversidad.cl</title>
+  <style>
+    /* Estilos generales */
+    
+    /* Reset de estilos */
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    
+    /* Estilos básicos */
+    body {
+        font-family: Arial, sans-serif;
+        line-height: 1.6;
+        background-color: #f0f0f0;
+    }
+    
+    .container {
+        max-width: 960px;
+        margin: 0 auto;
+        padding: 20px;
+    }
+    
+    a {
+        text-decoration: none;
+        color: #007bff;
+    }
+    
+    a:hover {
+        text-decoration: underline;
+    }
+    
+    ul {
+        list-style: none;
+    }
+    
+    .navbar {
+        background-color: #007bff;
+        color: #fff;
+        padding: 10px 0;
+    }
+    
+    .navbar .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .navbar .logo {
+        font-size: 1.5rem;
+    }
+    
+    .navbar ul {
+        display: flex;
+    }
+    
+    .navbar ul li {
+        margin-right: 20px;
+    }
+    
+    .navbar ul li a {
+        color: #fff;
+        padding: 10px;
+    }
+    
+    .header {
+        background-color: #343a40;
+        color: #fff;
+        text-align: center;
+        padding: 80px 0;
+    }
+    
+    .header .container {
+        max-width: 600px;
+    }
+    
+    .section {
+        padding: 40px 0;
+    }
+    
+    .section-title {
+        font-size: 2.5rem;
+        margin-bottom: 20px;
+    }
+    
+    .section-description {
+        font-size: 1.1rem;
+        line-height: 1.8;
+        margin-bottom: 20px;
+    }
+    
+    .btn {
+        display: inline-block;
+        padding: 10px 20px;
+        background-color: #007bff;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        text-decoration: none;
+    }
+    
+    .btn:hover {
+        background-color: #0056b3;
+    }
+    
+    .footer {
+        background-color: #343a40;
+        color: #fff;
+        padding: 20px 0;
+        text-align: center;
+    }
+    
+    .footer .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .footer ul {
+        display: flex;
+    }
+    
+    .footer ul li {
+        margin-right: 10px;
+    }
+    
+    .footer ul li a {
+        color: #fff;
+    }
+    
+    .social-media {
+        font-size: 1.5rem;
+    }
+    
+    .legal-info {
+        font-size: 0.9rem;
+    }
+    
+    /* Estilos específicos para blog.html */
+    
+    .blog-post {
+        background-color: #ffffff;
+        margin-bottom: 20px;
+        padding: 20px;
+        border-radius: 5px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+    
+    .blog-post h2 {
+        font-size: 1.8rem;
+        margin-bottom: 10px;
+    }
+    
+    .blog-post p {
+        font-size: 1rem;
+        line-height: 1.6;
+    }
+    
+    .blog-post a {
+        color: #007bff;
+        text-decoration: none;
+        font-weight: bold;
+    }
+    
+    .blog-post a:hover {
+        text-decoration: underline;
+    }
+    
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="container">
+      <div class="logo">
+        <a href="/">Biodiversidad.cl</a>
+      </div>
+      <ul class="nav-links">
+        <li><a href="./services.html">Servicios</a></li>
+        <li><a href="./experts.html">Expertos</a></li>
+        <li><a href="./projects.html">Proyectos</a></li>
+        <li><a href="./blog.html">Blog</a></li>
+        <li><a href="./contact.html">Contacto</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Header -->
+  <header class="header">
+    <div class="container">
+      <h1 class="main-title">Blog</h1>
+    </div>
+  </header>
+
+  <!-- Blog Posts -->
+  <section id="blog-posts" class="section">
+    <div class="container">
+      <article class="blog-post">
+        <h2>Título del Blog Post 1</h2>
+        <p>Descripción breve del blog post 1. <a href="#">Leer más...</a></p>
+      </article>
+      <article class="blog-post">
+        <h2>Título del Blog Post 2</h2>
+        <p>Descripción breve del blog post 2. <a href="#">Leer más...</a></p>
+      </article>
+      <article class="blog-post">
+        <h2>Título del Blog Post 3</h2>
+        <p>Descripción breve del blog post 3. <a href="#">Leer más...</a></p>
+      </article>
+      <!-- Puedes agregar más artículos de blog aquí -->
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="quick-links">
+        <ul>
+          <li><a href="./../../Frontend/Public/index.html">Inicio</a></li>
+          <li><a href="./services.html">Servicios</a></li>
+          <li><a href="./experts.html">Expertos</a></li>
+          <li><a href="./projects.html">Proyectos</a></li>
+          <li><a href="./blog.html">Blog</a></li>
+          <li><a href="./contact.html">Contacto</a></li>
+        </ul>
+      </div>
+      <div class="social-media">
+        <p>Síguenos:</p>
+        <!-- Aquí puedes agregar íconos de redes sociales con enlaces -->
+      </div>
+      <div class="legal-info">
+        <ul>
+          <li><a href="#terms">Términos y condiciones</a></li>
+          <li><a href="#privacy">Política de privacidad</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
