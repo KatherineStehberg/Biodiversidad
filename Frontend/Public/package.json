@@ -3,12 +3,11 @@
   "version": "1.0.0",
   "main": "index.js",
   "type": "module",
- "scripts": {
-  "dev": "vite",
-  "build": "vite build",
-  "serve": "vite preview"
-}
-
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "serve": "vite preview"
+  },
   "author": "Katherine Stehberg and Nicole Villarreal",
   "license": "ISC",
   "keywords": [],
