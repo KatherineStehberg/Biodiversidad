@@ -1,6 +1,6 @@
 const express = require('express');
 const router = express.Router();
-const db = require('../db'); // Asegúrate de que esta ruta sea correcta para tu archivo de configuración de PostgreSQL
+const db = require('./../../Backend/database/biodiversidadv3.sql'); // Asegúrate de que esta ruta sea correcta para tu archivo de configuración de PostgreSQL
 
 // Obtener todos los servicios
 router.get('/', async (req, res) => {
